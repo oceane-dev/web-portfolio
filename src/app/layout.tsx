@@ -1,31 +1,38 @@
-import './globals.css'
-import { ReactNode } from 'react'
-import Link from 'next/link'
-import { Fira_Sans } from 'next/font/google'
+import "./globals.css";
+import { ReactNode } from "react";
+import Link from "next/link";
+import { Fira_Sans } from "next/font/google";
 
 const firaSans = Fira_Sans({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-fira',
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-fira",
+  display: "swap",
+});
 
 export const metadata = {
-  title: 'Portfolio Océane',
-  description: 'Développeuse fullstack & IA',
-}
+  title: "Portfolio Océane",
+  description: "Développeuse fullstack & IA",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr" className={`${firaSans.variable}`}>
       <body className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
-        {/* HEADER */}
         <header className="w-full px-6 py-4 bg-white dark:bg-gray-800 shadow">
           <nav className="max-w-5xl mx-auto flex gap-6 text-sm font-medium text-gray-700 dark:text-gray-100">
-            <Link href="/" className="hover:text-orange-600 transition">Accueil</Link>
-            <Link href="/about" className="hover:text-orange-600 transition">À propos</Link>
-            <Link href="/projects" className="hover:text-orange-600 transition">Projets</Link>
-            <Link href="/contact" className="hover:text-orange-600 transition">Contact</Link>
+            <Link href="/" className="hover:text-orange-600 transition">
+              Accueil
+            </Link>
+            <Link href="/about" className="hover:text-orange-600 transition">
+              À propos
+            </Link>
+            <Link href="/projects" className="hover:text-orange-600 transition">
+              Projets
+            </Link>
+            <Link href="/contact" className="hover:text-orange-600 transition">
+              Contact
+            </Link>
           </nav>
         </header>
 
@@ -38,5 +45,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </footer>
       </body>
     </html>
-  )
+  );
 }
