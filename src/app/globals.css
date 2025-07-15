@@ -1,6 +1,14 @@
 @import "tailwindcss";
 
 :root {
+  --font-fira: 'Fira Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-fira);
+}
+
+:root {
   --background: #ffffff;
   --foreground: #171717;
 }
