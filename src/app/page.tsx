@@ -16,7 +16,7 @@ export default function Home() {
         Bonjour, je suis <span className="text-orange-600">Océane</span>
       </h1>
       <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mb-6">
-        Développeuse web fullstack passionnée par l’IA, le mobile et le DevOps.  
+        Développeuse web fullstack passionnée par l&#39;IA, le mobile et le DevOps.  
         Je conçois des applications modernes, accessibles et performantes.
       </p>
       <Link

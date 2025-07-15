@@ -4,7 +4,7 @@ export default function Contact() {
       <h1 className="text-4xl font-bold mb-6 text-orange-600">Me contacter</h1>
 
       <p className="text-lg mb-4">
-        Vous souhaitez échanger autour d’un projet, d’une opportunité ou simplement discuter tech ? N'hésitez pas à me contacter.
+        Vous souhaitez échanger autour d&#39;un projet, d&#39;une opportunité ou simplement discuter tech ? N&#39;hésitez pas à me contacter.
       </p>
 
       <ul className="text-lg space-y-2">
